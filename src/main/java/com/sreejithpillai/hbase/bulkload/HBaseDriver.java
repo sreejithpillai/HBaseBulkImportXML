@@ -44,7 +44,7 @@ public class HBaseDriver {
 		final String HBASE_CONFIG_ZOOKEEPER_CLIENT_PORT = "hbase.zookeeper.property.clientPort";
 		final String HBASE_ZOOKEEPER_CLIENT_PORT = "2181";
 		final String HBASE_CONFIG_ZOOKEEPER_QUORUM = "hbase.zookeeper.quorum";
-		final String HBASE_ZOOKEEPER_SERVER = "1.2.3.4"; // Machine IP where
+		final String HBASE_ZOOKEEPER_SERVER = "1.2.3.4","172.56.12.35"; // Machine IP where
 															// ZooKeeper is
 															// installed
 		conf.set(HBASE_CONFIG_ZOOKEEPER_CLIENT_PORT,
