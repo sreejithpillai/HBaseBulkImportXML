@@ -107,7 +107,7 @@ public class HBaseDriver {
 
 		// Importing the generated HFiles into a HBase table
 		LoadIncrementalHFiles loader = new LoadIncrementalHFiles(conf);
-		loader.doBulkLoad(new Path(args[1]), htable);
+		loader.doBulkLoad(new Path(outputPath, htable);
 		LOG.info("Code ended");
 	}
 
