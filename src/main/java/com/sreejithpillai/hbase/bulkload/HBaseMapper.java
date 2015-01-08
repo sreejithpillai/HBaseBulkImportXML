@@ -30,7 +30,7 @@ public class HBaseMapper extends
 	final static byte[] COL_FAMILY = "bookFamily".getBytes();
 
 	List<String> columnList = new ArrayList<String>();
-	Utils utils = new Utils();
+	ParseXml parseXml = new ParseXml();
 	ImmutableBytesWritable hKey = new ImmutableBytesWritable();
 	KeyValue kv;
 
@@ -55,7 +55,7 @@ public class HBaseMapper extends
 			throws InterruptedException, IOException {
 		String line = value.toString();
 
-		String fields[] = utils.getXmlTags(line, columnList);
+		String fields[] = parseXml.getXmlTags(line, columnList);
 
 		hKey.set(fields[0].getBytes());
 
